@@ -1,0 +1,80 @@
+{"intents": [
+             {"tag": "greeting",
+              "patterns": ["Bonjour","Bonne journée","Allô", "Bonsoir", "Salut", "ça roule?"],
+              "responses": ["Salut à toi!", "Comment vas tu?", "Salutations!", "Enchanté"]
+             },
+             {"tag": "age",
+              "patterns": ["Quel âge as-tu?", "C'est quand ton anniversaire?", "Quand es-tu né?"],
+              "responses": ["J'ai deux mois", "Je suis né en 2021", 
+                            "Ma date d'anniversaire est le 3 juillet et je suis né en 1996", "03/07/2021"]
+             },
+             {"tag": "date",
+              "patterns": ["Que fais-tu ce week-end?",
+                "Tu veux qu'on fasse un truc ensemble?", 
+                 "Quels sont tes plans pour cette semaine"],
+              "responses": ["Je suis libre toute la semaine", "Je n'ai rien de prévu", "Je ne suis pas occupé"]
+             },
+             {"tag": "name",
+              "patterns": ["Quel est ton prénom?", "Comment tu t'appelles?", "Qui es-tu?"],
+              "responses": ["Mon prénom est Chatty votre assistante vertuelle", "Je suis Chatty", "Chatty"]
+             },
+             {"tag": "goodbye",
+              "patterns": [ "bye","Bonne soirée","À tout à l’heure ","Bonne nuit", "au revoir", "à bientot"],
+              "responses": ["C'était sympa de te parler", "à plus tard", "On se reparle très vite!"]
+             },
+     {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["désolé, je ne peux pas vous comprendre", 
+                       "Merci de me donner plus d'informations",
+                       "Je ne suis pas sûr de comprendre"]
+        },
+    {"tag": "options",
+         "patterns": ["Comment pourriez-vous m'aider ? ", "Que pouvez-vous faire ? ", 
+                      "Quelle aide apportez-vous ? ", 
+                      " Comment pouvez-vous être utile ? ",
+                      " Quel soutien est offert "],
+     
+         "responses": ["Je peux vous guider à travers la liste des effets indésirables des médicaments, le suivi de la pression artérielle, les          hôpitaux et les pharmacies", 
+         "Offrir un soutien pour les effets indésirables des médicaments, la pression artérielle, les hôpitaux et les pharmacies"]
+        },
+     {"tag": "adverse_drug",
+         "patterns": ["Comment vérifier les effets indésirables des médicaments ? ",
+                      "Ouvrir le module sur les médicaments indésirables ", 
+                      " Donnez-moi une liste des médicaments provoquant un comportement indésirable ", 
+                      " Listez tous les médicaments adaptés au patient présentant un effet indésirable ",
+                      " Quels médicaments n'ont pas d'effet indésirable ? "],
+         "responses": ["Naviguer vers le module Effets indésirables des médicaments"]},
+
+        {"tag": "blood_pressure",
+         "patterns": ["Ouvrir le module de pression artérielle", "Tâche liée à la pression artérielle", 
+                     "Saisie des données de pression artérielle", "Je souhaite enregistrer les résultats de la pression artérielle",
+                        "Gestion des données de pression artérielle" ],
+         "responses": ["Naviguer vers le module Tension artérielle"]
+         
+        },
+    
+{"tag": "pharmacy_search",
+         "patterns": ["Trouvez-moi une pharmacie", "Trouver une pharmacie",
+                      "Liste des pharmacies à proximité", "Localiser la pharmacie", 
+                      "Rechercher une pharmacie" ],
+         "responses": ["Veuillez fournir le nom de la pharmacie"]},
+        
+{"tag": "hospital_search",
+         "patterns": ["Recherche d'un hôpital",
+                      "Recherche d'un hôpital pour transférer un patient", 
+                      "Je souhaite rechercher des données d'hôpital",
+                      "Recherche d'un hôpital pour un patient", 
+                      "Recherche des détails d'un hôpital" ],
+         "responses": ["Veuillez fournir le nom ou l'emplacement de l'hôpital"]
+         
+        },
+    {"tag": "appointment",
+         "patterns": ["Je veux prendre un rendez-vous", "aidez-moi pour prendre un rendez-vous"
+                      ],
+         "responses": ["Veuillez fournir votre informations pérsonnnelle pour prise notre RNV","Quelle date vous convient ?"]},
+    {"tag": "payement",
+         "patterns": ["quelle type des cartes vous accépter pour payer les factures de votre  clinique", "comment je peux payer","payement"
+                      ],
+         "responses": ["Vous pouvez payer par Carte Visa, Espèces ou Chèque"]}
+         
+]}
